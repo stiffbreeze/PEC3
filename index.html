@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es-es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Sara Candelario">
+    <meta name="descrption" content="Página de entrada a la página web Naturae Hub con una pequeña presentación y formulario de suscpricpión">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap" 
+    rel="stylesheet">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Inicio — naturaeHub</title>
+  </head>
+  <body>
+    <header>
+      <div class="container-fluid">
+        <a href="index.html"> <!--lo añado como enlace pq es algo común y útil-->
+            <img src="img/logotip.svg" alt="Logo de Naturae Hub" class="logo"></a>
+        <nav class="menu">
+            <ul>
+                <li><a href="tema-del-mes.html">TEMA DEL MES</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+            </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="container-fluid">
+        <div class="banner">
+            <div class="bannerTexto">
+                <h1>Naturae Hub</h1>
+                <p>Un espacio para los defensores del medio ambiente</p>
+            </div>
+            <figure>
+                <img
+                src="img/hero-image-home.jpg"
+                alt="Paisaje de cordillera">    
+                <figcaption>
+                    <span>Foto de <a href="https://unsplash.com/@ideasboom?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash" 
+                    title="Página del autor" class="dots">Qingbao Meng</a> en <a href="https://unsplash.com/photos/birds-eye-view-photograph-of-green-mountains-01_igFr7hd4?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash" 
+                    title="Página de origen de la imagen" class="dots">Unsplash</a></span>
+                </figcaption>
+            </figure>
+        </div>
+      </div>
+      <div class="container">
+        <div class="contenedorDosColumnas contenido-con-margen2">
+                <article>
+                    <h2 class="tituloInicio negrita">¿Qué es Naturae Hub?</h2>
+                    <p class="parrafo"><span class="negrita">Naturae Hub</span> es un espacio digital donde la belleza y el poder del entorno natural se quieren 
+                        encontrar con la acción, el aprendizaje y la conciencia ambiental.</p>
+                    <p class="parrafo">Inspirar y educar es lo que persigue <span class="negrita">Naturae Hub</span>, porque las personas deben vivir en consonancia con la naturaleza.</p>
+                </article>
+
+                <form action="#" method="post">
+                  <fieldset>
+                    <legend>Sé parte del cambio, <span class="negrita">suscríbete a nuestra <i lang="en">newsletter</i></span>.</legend>
+                    <div>
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" name="nombre_suscriptor" required minlength="1"/>
+                    </div>
+                    <div>
+                        <label for="correo">Correo electrónico</label>
+                        <input type="email" id="correo" name="email_suscriptor" required/>
+                    </div>
+                    <p class="letraPequeña">Antes de enviar tus datos, consulta nuestra <a href="" class="dots">política de privacidad.</a></p>
+                    <div class="casilla">
+                        <input type="checkbox" id="politica" name="politica_privacidad" value="aceptacion" required/> <!--OBLIGATORIO?!-->
+                        <label for="politica">He leído y acepto la política de privacidad<abbr title="obligatorio"></abbr></label>
+                    </div>
+                    <div class="button">
+                        <input type="submit" name="suscribirse" value="Suscríbeme" onclick="">
+                    </div>
+                  </fieldset>
+                </form>
+            </div>
+            <article class="apartadoIndice contenido-con-margen2">
+                <h2 class="tituloApartado">Historias de cambio</h2>
+                <p>Historias de personas y comunidades que con sus iniciativas están marcando la diferencia en la protección y conservación del medio ambiente. 
+                    Si conoces otras historias o eres su protagonista, <a href="mailto:historias@naturaehub.org" title="Enviar correo con tu historia" class="dots">cuéntanoslo.</a></p>
+                <div class="recuadrosBlancos">
+                    <div class="containerBlanco">
+                        <h3 class="titularEnlace"><a href="">Creando bosques urbanos</a></h3>
+                        <p>Un grupo de estudiantes decidió plantar árboles en terrenos descuidados de su ciudad; querían transformar áreas grises e insalubres 
+                            en pulmones verdes…</p>
+                        <p class="boton"><a href="">Saber más</a></p>
+                    </div>
+                    <div class="containerBlanco">
+                        <h3 class="titularEnlace"><a href="">Un refugio para las abejas</a></h3>
+                        <p>Los vecinos de Vallrosada han decidido enfrentarse a la disminución de las abejas. Han recuperado terrenos baldíos, los han plantado de 
+                            flores y han construido una granja de apicultura comunitaria…</p>
+                        <p class="boton"><a href="">Saber más</a></p>
+                    </div>
+                    <div class="containerBlanco">
+                        <h3 class="titularEnlace"><a href="">Convertir un río en un oasis de vida</a></h3>
+                        <p>Su río había sido devastado por la contaminación. La determinación de todo el pueblo ha conseguido rescatarlo; hoy es un ejemplo de cómo es 
+                            posible recuperar un ecosistema…</p>
+                        <p class="boton"><a href="">Saber más</a></p>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container-fluid">
+            <div class="izq">
+                <img src="img/logotip-n.svg" alt="Logo de Naturae Hub" class="logoFooter">
+                <p class="nombre">2024-2025. Sara Candelario Peña</p>
+            </div>
+            <div class="der">
+                <div class="logosFooter">
+                    <img src="img/instagram.svg" alt="Logo de Instagram">
+                    <img src="img/youtube.svg" alt="Logo de Youtube">
+                </div>
+                <div class="politicasContainer">
+                    <p class="politicasFooter"><a href="">Política de privacidad</a></p>
+                    <p><a href=""> Política de <i lang="en">cookies</i></a></p> <!--PONER HABLA INGLESAAAAA-->
+                    <p><a href=""> Aviso legal</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+ </body>    
+</html>

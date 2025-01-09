@@ -1,0 +1,1372 @@
+.lato-regular {
+    font-family: "Lato", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .lato-bold {
+    font-family: "Lato", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .lato-regular-italic {
+    font-family: "Lato", serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .lato-bold-italic {
+    font-family: "Lato", serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+
+* {
+  margin: 0;
+  padding: 0;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  padding: 0 1rem;
+  margin: 0 auto;
+}
+
+.container-fluid {
+  width: 100%;
+  padding: 0;
+}
+
+body {
+  font-family: "Lato", serif;
+  color: rgb(0, 0, 0);
+  background-color: rgb(242, 242, 230);
+  line-height: 1.6em;
+  font-size: 1.1em;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header, footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  text-align: center;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: rgb(255, 255, 255);
+}
+
+.logo {
+  max-width: 53%;
+}
+
+.menu {
+  font-weight: 700;
+  font-size: 0.85em;
+  margin: 1em 0;
+}
+
+.menu ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  flex-direction: column;
+
+}
+
+.menu a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-weight: 700;
+  font-size: 1em;
+  margin: 1em 0;
+}
+
+
+a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+nav ul li {
+  list-style-type: none;
+}
+
+nav ul li a:hover {
+  color: rgb(64, 195, 130);
+}
+
+footer p a:hover {
+  color: rgb(64, 195, 130);
+}
+
+
+.negrita {
+  font-weight: 700;
+}
+
+.italica {
+  font-style: italic;
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 23px;
+  font-weight: 700;
+}
+
+.dots {
+  border-bottom: 1px dotted;
+  padding-bottom: 2px;
+}
+
+.dots:hover {
+  border-bottom: 1px solid;
+  padding-bottom: 2px;
+}
+
+abbr {
+  cursor: help; /*se añade cursor con signo de interr.*/
+}
+
+
+/* Estructura Grid para el main */
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+
+.banner {
+  position: relative;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  width: 100%;
+  display: block;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.banner img {
+  width: 200%;
+  display: block;
+  margin-left: -50%;
+  height: auto;
+}
+
+.banner h1, .banner p {
+  margin: 0;
+}
+
+.banner h1 {
+  font-size: 48px;
+  margin-bottom: 50px;
+}
+
+.banner p {
+  font-size: 30px;
+}
+
+.bannerTexto {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-40%, -40%);
+  width: 100%;
+  text-align: center;
+  padding-right: 20%;
+}
+
+.banner figcaption {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background-color: rgba(242, 242, 230, 0.7);
+  color: rgb(0, 0, 0);
+  padding: 0.2em 0.7em;
+  font-size: 0.7em;
+}
+
+.tituloInicio {
+  padding-top: 85px;
+  padding-bottom: 60px;
+}
+
+.parrafo {
+  padding-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+form div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+input[type="text"], input[type="email"] {
+  padding: 0.7rem;
+  border: none;
+  width: 100%;
+}
+
+label {
+  margin-top: 1em;
+}
+
+div.casilla {
+  display: flex;
+  gap: 0rem;
+  flex-direction: row;
+}
+
+input[type="checkbox"] {
+  margin-right: 0.2rem;
+  margin-top: 0em;
+}
+
+label:last-child {
+  margin-top: 0em; /*aceptación frase sin espacio arriba*/
+}
+
+.letraPequeña {
+  font-size: 0.85em;
+  margin-top: 1.5em; /*más espacio después del input y antes de la aceptación*/
+  margin-bottom: 1em;
+}
+
+button, input[type="submit"] {
+  background-color: transparent;
+  border: 2px solid rgb(0, 0, 0);
+  padding: 0.5rem 0;
+  font-size: 1.1rem;
+  cursor: pointer;
+  width: 120px;
+  max-width: 200px;
+  margin-top: 1em; /*mas espacio con el texto*/
+}
+
+input[type="submit"]:hover {
+  border-color: rgb(64, 195, 130);
+}
+
+fieldset {
+  border: none; /* Elimina el borde */
+  padding: 0;   /* Elimina el padding extra */
+}
+
+.tituloApartado {
+  padding-top: 85px;
+  padding-bottom: 60px;
+}
+
+.containerBlanco {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(255, 255, 255);
+  padding: 2.5rem 1rem;
+  gap: 1.5rem;
+  margin-top: 55px;
+}
+
+.containerBlanco h3 {
+  margin: 0;
+  font-size: 1em;
+}
+
+.containerBlanco h3 a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.containerBlanco:last-child {
+  margin-bottom: 9em;
+}
+
+.boton a {
+  border: 2px solid rgb(0, 0, 0);
+  padding: 0.6rem 0.9rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.boton a:hover {
+  border-color: rgb(64, 195, 130);
+}
+
+
+
+
+footer {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  font-size: 0.8em;
+  padding-bottom: 65px;
+  flex-wrap: wrap;
+}
+
+
+.logoFooter {
+  max-width: 37%;
+  margin: 12px;
+  margin-top: 19px;
+}
+
+.nombre {
+  margin-bottom: 12px;
+}
+
+footer div p a {
+  color: rgb(255, 255, 255);
+}
+
+.logosFooter img:hover {
+  opacity: 0.7;
+}
+
+
+
+/*Inicio diseño segunda página de la web*/
+.fondoVerde {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(64, 195, 130); /* Color verde */
+  padding: 10px 15px; /* Espaciado interno */
+  color: rgb(255, 255, 255);
+}
+
+.contenidoCentrado {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra horizontalmente */
+  text-align: center; /* Centra el texto dentro de los elementos */
+}
+
+.tit {
+  text-align: center;
+  margin: 20px 0; /* Ajusta el espacio superior e inferior */
+  line-height: 1.5; /* Incrementa la altura de línea para más espacio entre líneas */
+}
+
+.tituloTema {
+    padding-top: 20px;
+    padding-bottom: 60px;
+}
+
+.listaHorizontal {
+  display: flex;
+  list-style: none; /* Elimina los puntos de la lista */
+  padding: 0; /* Elimina el padding por defecto */
+  font-size: 0.75em;
+  margin: 60px 0; /* Ajusta el margen superior e inferior de la lista */
+  text-align: center; /* Centra los elementos de la lista */
+  margin-bottom: 9em;
+  margin-right: 1em;
+  margin-left: -1em;
+  justify-content: center;
+}
+
+.listaHorizontal li:not(:last-child)::after {
+  content: '·'; /* Añade el punto verde entre los elementos */
+  color: rgb(64, 195, 130); /* Color verde del punto */
+  margin-left: 5px; /* Espacio después del texto antes del punto */
+  margin-right: 5px; /* Espacio después del punto */
+}
+
+.listaHorizontal a:hover {
+  color: rgb(64, 195, 130);
+}
+
+.tit2 {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+
+/*Contador!:*/
+.autoContador li {
+  counter-increment: section; /* Incrementa el contador por cada li */
+  margin-bottom: 70px; /* Espacio entre elementos de la lista */
+  list-style-type: none;
+  font-size: 0.94em; /*tamaño fuente ligeramente más pequeña que en el resto*/
+}
+
+.autoContador h3 {
+  position: relative;
+  margin-top: 0;
+}
+
+.autoContador h3::before {
+  content: "#" counter(section); /* Contenido del contador */
+  font-size: 1.4em; /* Tamaño grande del contador */
+  font-weight: bold; /* Negrita */
+  display: block; /* Aparece en una línea separada */
+  margin-bottom: 20px; /* Espacio debajo del número */
+  margin-top: -70px;
+  justify-content: left;
+}
+
+.autoContador img {
+  display: block;
+  width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
+  border: 18px solid rgb(255, 255, 255); /* Marco blanco alrededor de la imagen */
+  box-sizing: border-box; /* Incluir el borde en el ancho total */
+}
+
+.autoContador figcaption {
+  margin-top: 5px; /* Espacio encima del pie de imagen */
+  margin-bottom: 1em
+}
+
+
+.articuloPrev figcaption {
+  font-size: 0.7em;
+}
+
+.articuloPrev div p {
+  font-size: 0.9em; /*un poco más pequeña*/
+  margin-bottom: 1em;
+}
+
+.masInfo {
+  margin-top: 1em;
+}
+
+.masInfo:last-of-type {
+  margin-bottom: 9em;
+}
+
+
+
+/*inicio página Blog*/
+
+.tituloBlog {
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+/* Estilo general para el main con clase blog */
+.blog {
+  padding: 2rem 0;
+}
+
+/* Estilo para los artículos dentro de .blog */
+.articuloBlog {
+  background-color: rgb(255, 255, 255);
+  padding: 1.5rem;
+  padding-top: 0px;
+  margin-bottom: 2rem;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 20px; /*espacio entre trazas*/
+  grid-auto-rows: minmax(30px, auto); /*tamaño minimo y maximo de las cuadrículas*/
+  position: relative; /* Asegura que los elementos absolutos dentro del artículo se posicionen relativamente a este */
+}
+
+.articuloBlog figure {
+  position: relative; /* Esto permite posicionar el <figcaption> sobre la imagen */
+  margin: 0; /* Elimina el margen predeterminado */
+  width: calc(100% + 3rem); /* Compensa el padding del artículo (1.5rem a cada lado) */
+  margin-left: -1.5rem; /* Mueve el figure a la izquierda para compensar el padding */
+}
+
+.articuloBlog img {
+  width: 100%; /* Asegura que la imagen se ajuste al contenedor */
+  display: block; /* Elimina el espacio debajo de la imagen */
+}
+
+.articuloBlog figcaption {
+  position: absolute; /* Posiciona el <figcaption> sobre la imagen */
+  bottom: 20px; /* Lo coloca en la parte inferior de la imagen */
+  right: 20px; /* Lo alinea a la derecha */
+  background-color: rgba(242, 242, 230, 0.7); /* Fondo semitransparente */
+  color: rgb(0, 0, 0); /* Color del texto */
+  padding: 0.2em 0.7em; /* Espaciado interno */
+  font-size: 0.7em; /* Tamaño de fuente */
+}
+
+
+.titularEnlace a:hover {
+  color: rgb(64, 195, 130);
+}
+
+
+
+
+
+h3 {
+  font-size: 1.5em;
+}
+
+.autora {
+  font-size: 0.75em; /*un poco más pequeña*/
+  margin-bottom: 40px;
+}
+
+/*botones navegacion entre paginas*/
+.paginas {
+  display: flex; /* Los botones estarán en fila */
+  gap: 10px; /* Espacio entre los botones */
+  justify-content: center; /* Centra los botones en la fila */
+  margin-top: 20px; /* Ajusta el espacio superior según sea necesario */
+}
+
+.botonPagina {
+  background-color: rgb(255, 255, 255); /* Fondo blanco */
+  border: 2px solid rgb(0, 0, 0); /* Borde del cuadrado */
+  padding: 4px 4px; /* Espacio dentro del cuadrado */
+  font-size: 0.85em; /* Tamaño del texto */
+  cursor: pointer; /* Cambia el cursor cuando se pasa por encima */
+  width: 28px;
+  height: 28px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 8em;
+}
+
+.botonPagina1 {
+  background-color: rgb(64, 195, 130); /*con color verde por ser el 1*/
+  border: 0px; /*sin borde*/
+  color: rgb(255, 255, 255); /*de color blanco en este caso*/
+  padding: 4px 4px; /* Espacio dentro del cuadrado */
+  font-size: 0.85em; /* Tamaño del texto */
+  cursor: pointer; /* Cambia el cursor cuando se pasa por encima */
+  width: 28px;
+  height: 28px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 8em;
+}
+
+.botonPagina:hover {
+  border: 2px solid rgb(64, 195, 130); /* Cambia el color del borde en hover */  
+  background-color: rgb(64, 195, 130);
+  color: rgb(255, 255, 255);
+}
+
+
+/*última pagina articulo*/
+
+/*estilo breadcrumb:*/
+ul.breadcrumb {
+  padding: 10px 16px;
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+/* Display list items side by side */
+ul.breadcrumb li {
+  display: inline;
+  font-size: 0.75em;
+}
+
+ul.breadcrumb li+li:before {
+  padding: 8px;
+  color: rgb(0, 0, 0);
+  content: "\003E"; /*símbolo > entre enlaces!*/
+}
+
+ul.breadcrumb li a {
+  text-decoration: none;
+}
+
+/* Add a color on mouse-over */
+ul.breadcrumb li a:hover {
+  color: rgb(64, 195, 130);
+}
+
+
+.tituloArt {
+  font-size: 2.2em;
+  line-height: 1.3em;
+}
+
+.autoraArt {
+  margin-top: -0.8em; /*para que la autora aparezca mas cerca del título*/
+  margin-bottom: 1em;
+}
+
+.art figure {
+  position: relative; /* Esto permite posicionar el <figcaption> sobre la imagen */
+  margin: 0; /* Elimina el margen predeterminado de <figure> */
+}
+
+.art img {
+  width: 200%; /* Asegura que la imagen se ajuste al contenedor */
+  display: block; /* Elimina el espacio debajo de la imagen */
+  margin-left: -50%;
+  height: auto;
+  margin-bottom: 3em; /*espacio entre la imagen y el texto de abajo*/
+}
+
+
+.art figcaption {
+  position: absolute; /* Posiciona el <figcaption> sobre la imagen */
+  bottom: 20px; /* Lo coloca en la parte inferior de la imagen */
+  right: 10px; /* Lo alinea a la derecha */
+  background-color: rgba(242, 242, 230, 0.7); /* Fondo semitransparente */
+  color: rgb(0, 0, 0); /* Color del texto */
+  padding: 0.2em 0.7em; /* Espaciado interno */
+  font-size: 0.7em; /* Tamaño de fuente */
+}
+
+
+
+.letraGrande {
+  font-size: 1.24em;
+  margin-bottom: 3em;
+  line-height: 1.6em;
+}
+
+.artP{
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+figure iframe { /*que el video de Yt ocupe solo el ancho*/
+  width: 100%;
+}
+
+.mini {
+  font-size: 0.7em;
+}
+
+.espacio {
+  margin-top: 0.8em;
+  margin-bottom: 1em;
+}
+
+.lista {
+  margin-top: 1em;
+  margin-left: 2em;
+  font-size: 0.9em;
+}
+
+.lista li {
+  margin-bottom: 0.5em; /*espacio entre frase y frase de la lista*/
+}
+
+
+
+hr { /*linea que separa los apartados*/
+  width: 1000%; /* Asegura que la línea ocupe todo el ancho */
+  margin-top: 4em;
+  height: 2px;
+  background-color: rgb(0, 0, 0);
+  margin-bottom: 3em;
+  border: none; /* Elimina el borde predeterminado */
+  display: block; /* Asegura que sea un bloque */
+  margin-inline-start: -90em; /* Elimina márgenes automáticos */
+}
+
+
+
+.segundoAp {
+  font-size: 1.3em;
+  font-weight: 700;
+  margin-bottom: 1em;
+}
+
+.tituloInteresar {
+  font-size: 1em;
+  font-weight: 700;
+}
+
+.margen {
+  margin-bottom: 5em;
+}
+
+
+q {
+  quotes: "«" "»"; /*para cambiar las comillas de la cita "" por estas*/
+}
+
+
+
+
+/*Tablet: min-width 768px*/
+@media (min-width: 768px) {
+  /*inicio*/
+  body {
+  font-size: 18px;
+  }
+
+  header, footer {
+  padding: 1.5rem;
+  }
+
+  .container {
+  padding: 0 6rem;
+  }
+
+  .banner {
+    flex-direction: row;
+  }
+
+  .banner img {
+    width: 100%; /* Ocupa todo el ancho */
+    height: 50%; /* Ajusta el alto de la imagen */
+    object-fit: cover; /* Ajusta la imagen manteniendo su proporción */
+    display: block;
+    margin-left: 0; /* Elimina el margen izquierdo */
+  }
+
+  .recuadrosBlancos {
+    display: flex; /* Activa Flexbox */
+    justify-content: space-between; /* Distribuye los recuadros de forma equidistante */
+    gap: 40px; /* Añade espacio entre los recuadros */
+    height: auto; /* Asegura que el contenedor pueda ajustarse al contenido */
+  }
+
+  .containerBlanco {
+    display: flex;
+    flex-direction: column; /* Coloca los elementos dentro de cada recuadro en columna */
+    flex: 1; /* Hace que cada recuadro ocupe el mismo espacio disponible */
+    margin-bottom: 2rem; /* Margen inferior entre filas */
+    padding: 1rem; /* Espacio interior */
+    background-color: rgb(255, 255, 255); /* Fondo blanco */
+    box-sizing: border-box; /* Asegura que padding y borde se incluyan en el ancho */
+    min-height: 300px; /* Altura mínima para los recuadros */
+    display: flex; /* Mantiene el modelo de Flexbox */
+  }
+
+  .boton {
+    margin-top: auto; /* Empuja el botón hacia el fondo */
+    margin-bottom: 20px; /* Ajusta esta distancia para forzar la separación desde el fondo */
+  }
+
+  .boton a {
+    padding: 0.6rem 0.9rem;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: initial; /* Esto empuja el botón hacia el final del contenedor */
+    margin-bottom: 20px; /* Distancia desde el fondo */
+  }
+
+  .contenido-con-margen2 {
+    margin-left: -4em;  /* Ajusta el margen izquierdo según lo necesites */
+    margin-right: -4em; /* Ajusta el margen derecho según lo necesites */
+  }
+
+  input[type="text"], input[type="email"] {
+    width: 70%; /* Ajusta el porcentaje para que sean más cortas */
+  }
+  
+
+  /* Elimina margen extra solo en el último recuadro */
+  .containerBlanco:last-child {
+    margin-bottom: 1.8em; /* Remueve el margen adicional en el último recuadro */
+  }
+
+  /* Ajusta el margen entre los recuadros y el footer */
+  .recuadrosBlancos {
+    margin-bottom: 80px; /* Ajusta según el espacio que necesites entre los recuadros y el footer */
+  }
+
+  .bannerTexto {
+    padding-right: 20%;
+  }
+
+/*Tema del mes*/
+  .contenido-con-margen-tema {
+    margin-left: -4em;  /* Ajusta el margen izquierdo según lo necesites */
+    margin-right: -4em; /* Ajusta el margen derecho según lo necesites */
+  }
+
+
+
+/*estilo página Blog*/
+  .entradasBlog {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /*creamos dos columnas*/
+    grid-column-gap: 40px; /*ajusto espacio entre columnas*/
+    grid-row-gap: 10px; /*ajusto espacio verticalmente*/
+    justify-items: center; /* Centra las columnas en el contenedor */
+    margin-left: -4em;
+    margin-right: -4em;
+  }
+
+  .articuloBlog img {
+    padding: 0%;
+    width: 100%; /* Asegura que la imagen ocupe el 100% del ancho de su contenedor */
+  }
+
+
+
+/*detalles página post*/
+  .art figcaption {
+    right: -75px; /* Lo alinea a la derecha */
+
+  }
+
+  .art img {
+    width: 100%; /* Ocupa todo el ancho */
+    object-fit: cover; /* Ajusta la imagen manteniendo su proporción */
+    display: block;
+    height: 100%; /* Hace que la imagen ocupe todo el alto del contenedor */
+    object-fit: cover; /* Recorta la imagen para cubrir el contenedor */
+    object-position: center; /* Centra la imagen */
+    margin-left: -20em;
+    width: 185%; /* Asegura que la imagen se ajuste al contenedor */
+  }
+
+  .containerArticulos {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /*creamos dos columnas*/
+    grid-column-gap: 40px; /*ajusto espacio entre columnas*/
+    grid-row-gap: 10px; /*ajusto espacio verticalmente*/
+    justify-items: center; /* Centra las columnas en el contenedor */
+    margin-left: -4em;
+    margin-right: -4em;
+  }
+
+  .no-margen {
+    margin-bottom: 4.9em;
+  }
+
+
+}
+
+
+
+
+/*Escritorio: min-width 1024px*/
+@media (min-width: 1024px) {
+  /*menú de navegación/header*/
+  .container-fluid {
+    display: flex;
+    justify-content: space-between; /* Alinea el logo a la izquierda y el menú a la derecha */
+    align-items: center; /* Centra verticalmente el contenido */
+  }
+
+  .logo {
+    max-width: none; /* Restablece cualquier limitación previa en el ancho */
+    width: auto; /* Ajusta el logo automáticamente */
+    margin-right: auto; /* Empuja el logo hacia la izquierda */
+  }
+
+  .menu {
+    margin: 0; /* Elimina el margen vertical para alinear mejor el menú */
+  }
+
+  .menu ul {
+    flex-direction: row; /* Alinea los elementos del menú en una fila */
+    align-items: center; /* Centra verticalmente los elementos del menú */
+  }
+
+  .menu li {
+    margin: 0 1rem; /* Agrega espacio horizontal entre los elementos del menú */
+  }
+
+  .menu li:not(:last-child)::after {
+    content: '     |'; /* Agrega la barra separadora */
+    margin-left: 1rem; /* Espacio entre el texto y la barra */
+  }
+
+  .menu a {
+    margin: 0; /* Elimina el margen vertical */
+  }
+
+  p {
+    font-size: 0.85em;
+  }
+
+/* footer diferente en escritorio */
+  footer .container-fluid {
+    display: flex;
+    justify-content: space-between; /* Alineamos las secciones a la izquierda y derecha */
+    align-items: flex-start; /* Alineamos las secciones al inicio verticalmente */
+    width: 100%;
+  }
+
+  /* Sección izquierda (izq) */
+  footer .izq {
+    display: flex;
+    flex-direction: column; /* Alineamos el logo y el texto verticalmente */
+    align-items: flex-start; /* Alineamos a la izquierda */
+    margin-top: -1em;
+  }
+
+  .logoFooter {
+    max-width: 37%; /* Ajustamos el tamaño del logo */
+    margin-bottom: 1rem; /* Añadimos espacio entre el logo y el texto */
+  }
+
+  /* Sección derecha (der) */
+  footer .der {
+    display: flex;
+    flex-direction: column; /* Alineamos las imágenes y enlaces verticalmente */
+    align-items: flex-end; /* Alineamos a la derecha */
+    text-align: right; /* Alineamos el texto de los enlaces a la derecha */
+  }
+
+  footer .der img {
+    margin-bottom: 1rem; /* Añadimos espacio entre las imágenes */
+  }
+
+  /* Contenedor de los iconos */
+  footer .der .logosFooter {
+    display: flex; /* Usamos flexbox para alinear los iconos en una fila */
+    gap: 1rem; /* Añadimos espacio entre los iconos */
+    align-items: center; /* Alineamos los iconos verticalmente al centro */
+  }
+
+
+  .logoFooter {
+    width: 500px; /* Establece el tamaño del logo en píxeles */
+    margin-bottom: 1rem; /* Manteniendo el espacio entre el logo y el texto */
+    margin-left: 0em;
+  }
+
+  /* Contenedor de las políticas */
+  footer .der .politicasContainer {
+    display: flex; /* Alineamos las políticas en una sola línea */
+    gap: 1rem; /* Añadimos espacio entre los párrafos */
+    align-items: center; /* Alineamos verticalmente los elementos */
+  }
+
+  footer .der .politicasContainer p {
+    margin: 0; /* Eliminamos los márgenes de los párrafos */
+  }
+
+  footer .der .politicasContainer p:not(:last-child)::after {
+    content: '|'; /* Añadimos el separador entre los enlaces */
+    margin-left: 1rem; /* Espaciado entre el enlace y el separador */
+  }
+
+  footer .der .politicasFooter, footer .der p {
+    margin: 0.5rem 0; /* Añadimos un pequeño margen entre los enlaces */
+  }
+
+
+
+
+
+  /*inicio*/
+  body {
+    font-size: 20px;
+  }
+
+  header, footer {
+    padding: 2rem;
+  }
+
+  .banner {
+    padding: 0;
+    position: relative;
+    width: 100%; /* Ocupa todo el ancho */
+    height: 375px; /* Ajusta esta altura para controlar cuánta imagen se ve */
+    overflow: hidden; /* Oculta la parte que sobrepasa el contenedor */
+  }
+
+  .banner img {
+    width: 100%; /* Hace que la imagen ocupe todo el ancho */
+    height: 100%; /* Hace que la imagen ocupe todo el alto del contenedor */
+    object-fit: cover; /* Recorta la imagen para cubrir el contenedor */
+    object-position: center; /* Centra la imagen */
+    display: block;
+    margin-left: 0;
+  }
+
+  
+  .recuadrosBlancos {
+    display: flex;
+    justify-content: space-between; /* Espacio uniforme entre los elementos */
+  }
+
+  .containerBlanco {
+    flex: 0 1 calc(33.333% - 2rem); /* Tres elementos por fila con espacio lateral */
+    margin-bottom: 2rem; /* Margen inferior entre filas */
+    box-sizing: border-box; /* Asegura que padding y borde se incluyan en el ancho */
+    padding: 1rem; /* Espacio interior */
+    background-color: rgb(255, 255, 255); /* Fondo blanco */
+  }
+
+  /* Elimina margen extra solo en el último recuadro */
+  .containerBlanco:last-child {
+    margin-bottom: 1.7em; /* Remueve el margen adicional en el último recuadro */
+  }
+
+  input[type="text"], input[type="email"] {
+    padding: 0.7rem;
+    border: none;
+    width: 100%;
+  }
+
+  .contenido-con-margen2 {
+    margin-left: 6rem;  /* Ajusta el margen izquierdo según lo necesites */
+    margin-right: 6rem; /* Ajusta el margen derecho según lo necesites */
+  }
+
+  .contenedorDosColumnas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 2em;
+  }
+
+  .contenedorDosColumnas article {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .no-margen {
+    margin-bottom: 1.6em;
+  }
+
+  .contenedorDosColumnas form {
+    grid-column: 2;
+    grid-row: 1;
+    margin-left: 4em;
+    margin-right: 4em;
+    margin-top: 10.2em;
+    font-size: 0.85em;
+  }
+
+  .contenedorDosColumnas form label {
+    font-size: 0.79em;
+  }
+
+  .contenedorDosColumnas .button input {
+    border: 1px solid rgb(0, 0, 0); /*borde mas fino*/
+    padding: 0.5rem 0.5rem;
+    font-size: 0.9rem; /*letra mas pqeueña*/
+    cursor: pointer;
+  }
+
+  .button input {
+    margin-top: 1em;
+    margin-bottom: -0.5em;
+  }
+
+  .recuadrosBlancos {
+    display: flex;
+    justify-content: space-between; /* Esto distribuirá las columnas uniformemente */
+    gap: 20px; /* Espacio entre las columnas */
+  }
+  
+  .containerBlanco {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1; /* Esto hace que las columnas tengan el mismo tamaño */
+    min-height: 300px; /* Asegúrate de que cada columna tenga una altura mínima */
+    padding-bottom: 1rem; /* Puedes ajustar el padding si es necesario */
+  }
+  
+  .boton {
+    margin-top: 0.5em; /* Reduce el margen superior para acercar el botón al texto */
+  }
+
+
+
+
+/*Página tema del mes!:*/
+  .columnas {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    margin: 0; /* Elimina los márgenes por defecto */
+    padding: 0; /* Elimina los rellenos por defecto */
+    width: 100%; /* Asegura que ocupe todo el ancho disponible */
+    flex-wrap: wrap; /* Permite que las columnas se ajusten si no hay suficiente espacio */
+    align-items: flex-start; /* Alinea las columnas al inicio (arriba) */
+  }
+
+  .columna {
+    flex: 1;
+    padding: 0; /* Si no quieres relleno dentro de las columnas */
+  }
+
+  .columna.lista {
+    width: 20%;
+    flex-grow: 2; /* Aumenta el tamaño de la primera columna */
+    margin-right: 3em;
+    margin-top: 2em;
+  }
+
+  .columna.lista ul {
+    list-style-type: none; /* Elimina los puntos de la lista */
+    padding: 0; /* Elimina el padding por defecto */
+    font-size: 0.75rem; /* Ajusta el tamaño de la letra */
+    margin: 0; /* Elimina los márgenes */
+    text-align: left; /* Alinea el texto a la izquierda */
+    display: block; /* Asegura que los elementos se muestren en bloque (uno debajo del otro) */
+    white-space: nowrap; /* Impide que el texto se divida en varias líneas */
+    overflow: hidden; /* Evita el desbordamiento */
+    margin-left: -140px;
+  }
+
+  .columna.lista li {
+    margin-bottom: -0.7rem; /* Espacio entre los elementos de la lista */
+  }
+
+  .listaHorizontal li:not(:last-child)::after {
+    content: ''; /* Añade el punto verde entre los elementos */
+  }
+
+  .webTema { /*asegurar que tenga los margenes deseados a ambos lados*/
+    margin-left: 3em;
+    margin-right: -3em;
+  }
+
+
+  
+
+/*ajuste del titulo de la página*/
+  .tituloTema {
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap; /* Evita el salto de línea */
+    padding-top: 20px;
+    padding-bottom: 60px;    
+    font-size: 2.3em; /* Ajusta el tamaño para pantallas grandes */
+    margin-bottom: -40px;
+    margin-left: -120px;
+    display: block; /* O inline si no necesitas flexbox */
+    text-align: center; /* Para centrar el texto */
+  }
+
+.fondoVerde {
+    margin-left: 10px; /* Separa ligeramente el texto */
+}
+
+.contenidoCentrado h2 {
+  margin-left: -120px;
+}
+
+
+/*ajuste segunda columna*/
+  .contador-y-textos {
+    margin-top: 70px;
+    white-space: nowrap; /* Impide que el texto se divida en varias líneas */
+    font-size: 0.8em;
+    margin-left: 55px;
+    margin-top: -10em; /*espacio entre el titulo de la página y las columnas*/
+  }
+
+  .tit2 {
+    font-size: 1.5em;
+  }
+  
+
+  /*tercera columna*/
+
+  .imagen {
+    margin-left: -6em;
+    margin-top: -7.5em; /*espacio entre el titulo de la página y las columnas*/
+    margin-bottom: 6em;
+  }
+
+  .imagen img {
+    width: 75%;
+    height: auto;
+    border: 14px solid rgb(255, 255, 255); /*marco blanco mas fino*/
+  }
+
+  .imagen-y-pie figcaption {
+    margin-top: -4px; /* Espacio encima del pie de imagen */
+    text-align: left;
+    font-size: 0.6rem;
+  }
+
+
+/*cuarta columna textoo!*/
+
+  p.texto-lateral-imagen, .masInfo {
+    margin-right: 1.7em;
+    margin-left: -95px;
+    margin-top: -8em; /*espacio entre el titulo de la página y las columnas*/
+    margin-bottom: 10em;
+  }
+
+  .articuloPrev div p {
+    font-size: 0.79em;
+    line-height: 1.7em;
+  }
+
+  .articuloPrev .columna.descpricion .masInfo {    
+    font-size: 0.7em;
+  }
+
+  .columna.descpricion {
+    display: flex;
+    flex-direction: column; /* Asegura que los elementos se apilen verticalmente */
+    gap: 1rem; /* Espacio entre los elementos */
+    margin-top: -1em;
+  }
+  
+  .columna.descpricion .masInfo {
+    margin-top: -1.5em; /* Asegura que esté debajo de la descripción */
+  }
+  
+  .articuloPrev {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .articuloPrev .columna {
+    flex: 1;
+  }
+
+  .columna.lista {
+    flex-grow: 2; /* Permite que esta columna crezca el doble que las demás */
+  }
+
+  /* Para que las otras columnas no se vean afectadas */
+  .columna {
+      flex-grow: 1; /* Las demás columnas crecen con el mismo factor */
+  }
+
+
+/*estilo página Blog*/
+  .entradasBlog {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /*creamos dos columnas*/
+    grid-column-gap: 40px; /*ajusto espacio entre columnas*/
+    grid-row-gap: 10px; /*ajusto espacio verticalmente*/
+    margin-left: -2em; /*ajuste para que quede menos espacio en los margenes de los lados*/
+    margin-right: -2em;
+  }
+
+  .articuloBlog img {
+    padding: 0%;
+  }
+
+
+  /*detalles página post*/
+  .art figcaption {
+    right: -75px; /* Lo alinea a la derecha */
+
+  }
+
+  .articuloBlog h3 {
+    font-size: 1em;
+  }
+
+  .video-container {
+    position: relative;
+    width: 100%;
+    max-width: 660px; /* Puedes ajustar el tamaño máximo */
+    height: auto;
+    margin: 0 auto; /* Centra el video en su contenedor */
+}
+
+
+
+
+
+/*ajustes en página post*/
+  .art figure {
+    padding: 0;
+    position: relative;
+    width: 100%; /* Ocupa todo el ancho */
+    height: 375px; /* Ajusta esta altura para controlar cuánta imagen se ve */
+    margin: 0; /* Elimina márgenes */
+    margin-bottom: 3em;
+  }
+
+  
+  .art img {
+    height: 100%; /* Hace que la imagen ocupe todo el alto del contenedor */
+    object-fit: cover; /* Recorta la imagen para cubrir el contenedor */
+    object-position: center; /* Centra la imagen */
+    display: block;
+    margin-left: -10em;
+    width: 140%; /* Asegura que la imagen se ajuste al contenedor */
+  }
+
+  .tituloArt {
+    margin-left: 0em; /*para que empiece en el inicio*/
+  }
+ 
+  h1 {
+    word-spacing: 0.2rem; /* o el valor adecuado */
+}
+
+  .contenido-con-margen {
+    margin-left: 6rem;  /* Ajusta el margen izquierdo según lo necesites */
+    margin-right: 6rem; /* Ajusta el margen derecho según lo necesites */
+  }
+
+
+/*artículos en cuadros blancos*/
+  .containerArticulos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Cuatro columnas iguales */
+    gap: 2rem; /* Espacio entre las columnas */
+    margin: 0 auto; /* Centra el contenedor */
+    padding: 0 2rem; /* Espacio horizontal dentro del contenedor */
+    align-items: stretch; /* Asegura que todos los artículos tengan la misma altura */
+    margin-left: -4.5em; /*ajuste para que quede menos espacio en los margenes de los lados*/
+    margin-right: -4.5em;
+    margin-bottom: 3em;
+  }
+
+
+
+  .segundoAp{
+    margin-left: -2em;
+  }
+
+  .containerArticulos .articuloBlog:last-child {
+    margin-bottom: 2rem; /* Ajusta este valor según lo necesites */
+  }
+
+  .containerArticulos .articuloBlog h3.tituloInteresar {
+    font-size: 0.77em; /* Ajusta el valor según lo necesites */
+    line-height: 1.3em; /*menos interlineado*/
+  }
+
+  .boton a {
+    border: 1px solid rgb(0, 0, 0); /*borde mas fino*/
+    padding: 0.6rem 0.9rem;
+    font-size: 0.75rem; /*letra mas pqeueña*/
+    cursor: pointer;
+  }
+
+  .boton {
+    margin-top: 1em;
+    margin-bottom: -0.5em;
+  }
+
+  .containerArticulos .articuloBlog figcaption {
+    font-size: 0.6rem;
+    padding: 0.2em 0.4em; /* Espaciado interno */
+    margin-right: -1em;
+    margin-bottom: -1em;
+  }
+
+  .containerArticulos .articuloBlog figcaption {
+    line-height: 2.3; /* Ajusta el valor según lo necesites */
+  }
+}
